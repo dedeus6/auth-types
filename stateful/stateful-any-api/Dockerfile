@@ -13,5 +13,5 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 # docker image build -t stateful-any-api .
 
 # Comando pra construir o container da imagem que criamos.
-# docker container run --name stateful-any-api -p 8083:8083 --network auth_auth -e "DB_HOST=stateful-auth-db"
+# docker container run --name stateful-any-api -p 8083:8083 --network auth-types_auth -e "DB_HOST=stateful-auth-db"
     # -e "DB_PORT=5432" -e "DB_NAME=auth-db" -e "PORT=8083" stateful-any-api
